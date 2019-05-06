@@ -6,7 +6,7 @@ describe 'sort_array' do
     expect(sut.class).to eq Array
  end
 
- it "warns the user to pass an array if passed a method that does not respond to sort" do
+ it "warns the user to pass an array if passed a input that does not respond to sort" do
     sut = sort_array("")
     expect(sut).to eq "Please provide an array as an input"
  end
